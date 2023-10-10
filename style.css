@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    justify-content: center;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.768);
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    place-items: center;
+    height: 50%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.345);
+}
+
+.container .card:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 170);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(0, 179, 255);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(55, 0, 255);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(5)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgba(242, 255, 0, 0.772);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(6)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 68);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(7)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(255, 98, 0);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(8)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgba(55, 255, 0, 0.753);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.container .card:nth-child(9)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(11, 111, 0);
+    width: 100px;
+    height: 100px;
+    transition: 400ms;
+}
+
+.card:hover::after {
+    scale: 7;
+}
+
+.card-header {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+}
+
+.card-body {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    z-index: 10;
+}
